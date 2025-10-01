@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Dashboard</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1c1c1c, #3d3d3d);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .card {
+      background: linear-gradient(135deg, #6b46c1, #4c51bf);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card .icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .card a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="card" style="background: linear-gradient(135deg, #9f7aea, #667eea);">
+      <div class="icon"><i class="fas fa-file-alt"></i></div>
+      <h2>CV</h2>
+      <a href="cv/index.html">Open</a>
+    </div>
+
+    <div class="card" style="background: linear-gradient(135deg, #38a169, #319795);">
+      <div class="icon"><i class="fas fa-calculator"></i></div>
+      <h2>Calculator</h2>
+      <a href="calculator/calculator.html">Open</a>
+    </div>
+
+    <div class="card" style="background: linear-gradient(135deg, #ecc94b, #ed8936);">
+      <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+      <h2>Nike-CO</h2>
+      <a href="nike-CO/index.html">Open</a>
+    </div>
+  </div>
+</body>
+</html>
